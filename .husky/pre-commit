@@ -1,0 +1,5 @@
+#!/bin/sh
+
+npm run prettier:format
+npm run typescript-check
+#npm run lint
