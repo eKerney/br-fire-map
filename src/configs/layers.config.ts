@@ -29,11 +29,14 @@ export const WILDFIRES_LAYER_CONFIG: LayerType = {
   outFields: ['*'],
   popupTemplate: {
     title: (e: any) => {
-      return new Date(e.graphic.attributes.date).toLocaleDateString();
+      return new Date(e.graphic.attributes.FireDiscoveryDateTime).toLocaleDateString();
     },
     content: `
         <div>Incident Name: {IncidentName}</div>
-        <div>Feature Category: {FeatureCategory}</div>
+        <div>Incident Category: {IncidentTypeCategory}</div>
+        <div>Daily Acres: {DailyAcres}</div>
+        <div>Primary Fuel: {PrimaryFuelModel}</div>
+        <div>GloablID: {GlobalID}</div>
       `,
   },
 };

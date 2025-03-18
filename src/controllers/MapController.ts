@@ -24,6 +24,7 @@ class MapController {
   #mapview?: __esri.MapView;
   #mapLayers?: __esri.Layer[];
   firesLayerView: __esri.FeatureLayerView | undefined;
+  wildfiresLayerView: __esri.FeatureLayerView | undefined;
 
   /**
    * Initialize the MapView and Map
@@ -45,11 +46,9 @@ class MapController {
     });
 
     // Quick way to add layerList widget
-    //
     // const layerList = new LayerList({
     //   view: this.#mapview
     // });
-    //
     // this.#mapview.ui.add(layerList, "bottom-right");
 
     this.#mapview?.ui.move('zoom', 'top-right');
@@ -68,6 +67,9 @@ class MapController {
       this.#mapview?.whenLayerView(firesFeatureLayer)?.then((featureLayerView) => {
         this.firesLayerView = featureLayerView;
       });
+      this.#mapview?.whenLayerView(wildfiresFeatureLayer)?.then((featureLayerView) => {
+        this.wildfiresLayerView = featureLayerView;
+      });
 
       store.dispatch(setMapLoaded(true));
     });
@@ -80,12 +82,14 @@ class MapController {
     if (selectedLayer) selectedLayer.visible = !selectedLayer?.visible;
   };
 
-  updateFeatureFilter = async (brightness: number, confidence: number) => {
+  updateFeatureFilter = async (brightness: number, confidence: number, percentContained: number, dailyAcres: number) => {
     if (this.firesLayerView) {
       const where = `brightness > ${brightness} AND percent_confidence > ${confidence}`;
-      this.firesLayerView.filter = new FeatureFilter({
-        where: where,
-      });
+      this.firesLayerView.filter = new FeatureFilter({ where: where });
+    }
+    if (this.wildfiresLayerView) {
+      const where = `DailyAcres > ${dailyAcres} AND PercentContained > ${percentContained}`;
+      this.wildfiresLayerView.filter = new FeatureFilter({ where: where });
     }
   };
 

@@ -1,0 +1,152 @@
+{
+  "type" : "FeatureCollection", 
+  "features" : [
+    {
+      "type" : "Feature", 
+      "id" : 1, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -78.5921, 38.6636500000001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 1, 
+        "IncidentName" : "Waterfall Mountain", 
+        "IncidentTypeCategory" : "WF", 
+        "UniqueFireIdentifier" : "2024-VAVAF-240044", 
+        "DailyAcres" : 6399, 
+        "CalculatedAcres" : 7231.2432, 
+        "PercentContained" : 100, 
+        "ICS209ReportDateTime" : 1712182412000, 
+        "FireDiscoveryDateTime" : 1710969545000, 
+        "DiscoveryAcres" : 0.1, 
+        "POOCounty" : "Page", 
+        "POOState" : "US-VA", 
+        "FireCause" : "Undetermined", 
+        "FireCauseGeneral" : null, 
+        "GACC" : "SACC", 
+        "TotalIncidentPersonnel" : null, 
+        "IncidentManagementOrganization" : "Type 3 IC", 
+        "FireMgmtComplexity" : null, 
+        "ResidencesDestroyed" : 17, 
+        "OtherStructuresDestroyed" : 1, 
+        "Injuries" : null, 
+        "Fatalities" : null, 
+        "PredominantFuelGroup" : null, 
+        "PredominantFuelModel" : null, 
+        "PrimaryFuelModel" : "Hardwood Litter", 
+        "ContainmentDateTime" : null, 
+        "ControlDateTime" : null, 
+        "FinalAcres" : null, 
+        "IsValid" : 1, 
+        "FireOutDateTime" : null, 
+        "ModifiedOnDateTime" : 1741208272000, 
+        "IncidentTypeKind" : "FI", 
+        "IrwinID" : "a820f5af-074c-4a7f-98fd-14a52f9de763", 
+        "GlobalID" : "a820f5af-074c-4a7f-98fd-14a52f9de763", 
+        "ModifiedOnAge" : 12, 
+        "FireDiscoveryAge" : 362
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 2, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -78.6047829999999, 39.0332000000001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 2, 
+        "IncidentName" : "Waites Run", 
+        "IncidentTypeCategory" : "WF", 
+        "UniqueFireIdentifier" : "2024-VAVAF-240042", 
+        "DailyAcres" : 6223, 
+        "CalculatedAcres" : null, 
+        "PercentContained" : 100, 
+        "ICS209ReportDateTime" : 1712182401000, 
+        "FireDiscoveryDateTime" : 1710965708000, 
+        "DiscoveryAcres" : 20, 
+        "POOCounty" : "Hardy", 
+        "POOState" : "US-WV", 
+        "FireCause" : "Undetermined", 
+        "FireCauseGeneral" : null, 
+        "GACC" : "SACC", 
+        "TotalIncidentPersonnel" : null, 
+        "IncidentManagementOrganization" : null, 
+        "FireMgmtComplexity" : null, 
+        "ResidencesDestroyed" : null, 
+        "OtherStructuresDestroyed" : null, 
+        "Injuries" : null, 
+        "Fatalities" : null, 
+        "PredominantFuelGroup" : null, 
+        "PredominantFuelModel" : null, 
+        "PrimaryFuelModel" : "Hardwood Litter", 
+        "ContainmentDateTime" : null, 
+        "ControlDateTime" : null, 
+        "FinalAcres" : null, 
+        "IsValid" : 1, 
+        "FireOutDateTime" : null, 
+        "ModifiedOnDateTime" : 1741268708000, 
+        "IncidentTypeKind" : "FI", 
+        "IrwinID" : "9fadca92-9b8c-49a8-ae80-87a193715338", 
+        "GlobalID" : "9fadca92-9b8c-49a8-ae80-87a193715338", 
+        "ModifiedOnAge" : 12, 
+        "FireDiscoveryAge" : 362
+      }
+    }, 
+    {
+      "type" : "Feature", 
+      "id" : 3, 
+      "geometry" : 
+      {
+        "type" : "Point", 
+        "coordinates" : [
+          -116.50195, 47.7570170000001
+        ]
+      }, 
+      "properties" : {
+        "OBJECTID" : 3, 
+        "IncidentName" : "D1 RX Lone Cabin", 
+        "IncidentTypeCategory" : "RX", 
+        "UniqueFireIdentifier" : "2024-IDIPF-000105", 
+        "DailyAcres" : null, 
+        "CalculatedAcres" : null, 
+        "PercentContained" : null, 
+        "ICS209ReportDateTime" : null, 
+        "FireDiscoveryDateTime" : 1725981240000, 
+        "DiscoveryAcres" : null, 
+        "POOCounty" : "Kootenai", 
+        "POOState" : "US-ID", 
+        "FireCause" : "Undetermined", 
+        "FireCauseGeneral" : null, 
+        "GACC" : "NRCC", 
+        "TotalIncidentPersonnel" : null, 
+        "IncidentManagementOrganization" : null, 
+        "FireMgmtComplexity" : null, 
+        "ResidencesDestroyed" : null, 
+        "OtherStructuresDestroyed" : null, 
+        "Injuries" : null, 
+        "Fatalities" : null, 
+        "PredominantFuelGroup" : null, 
+        "PredominantFuelModel" : null, 
+        "PrimaryFuelModel" : null, 
+        "ContainmentDateTime" : null, 
+        "ControlDateTime" : null, 
+        "FinalAcres" : null, 
+        "IsValid" : 1, 
+        "FireOutDateTime" : null, 
+        "ModifiedOnDateTime" : 1742142548000, 
+        "IncidentTypeKind" : "FI", 
+        "IrwinID" : "01e0e05c-d3b4-4cd1-ad9e-5db039edb133", 
+        "GlobalID" : "01e0e05c-d3b4-4cd1-ad9e-5db039edb133", 
+        "ModifiedOnAge" : 2, 
+        "FireDiscoveryAge" : 189
+      }
+    }, 
+  ]
+}
