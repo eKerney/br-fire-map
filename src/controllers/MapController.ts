@@ -9,7 +9,10 @@ import { setMapLoaded } from '../store/slices/mapSlice';
 
 // Config
 import { firesFeatureLayer, wildfiresFeatureLayer } from '../configs/layers.config.ts';
-import LayerList from '@arcgis/core/widgets/LayerList';
+import ScaleBar from "@arcgis/core/widgets/ScaleBar";
+import BasemapGallery from "@arcgis/core/widgets/BasemapGallery";
+import BasemapToggle from '@arcgis/core/widgets/BasemapToggle';
+// import LayerList from '@arcgis/core/widgets/LayerList';
 
 export const esriMap = new Map({
   basemap: 'gray',
@@ -46,13 +49,22 @@ class MapController {
     });
 
     // Quick way to add layerList widget
-    // const layerList = new LayerList({
-    //   view: this.#mapview
-    // });
+    // const layerList = new LayerList({ view: this.#mapview });
     // this.#mapview.ui.add(layerList, "bottom-right");
-
+    // top widgets
     this.#mapview?.ui.move('zoom', 'top-right');
     this.#mapview?.ui.add(['control-panel'], 'top-right');
+    // basemap
+    // const baseMap = new BasemapGallery({ view: this.#mapview });
+    // this.#mapview?.ui.add(baseMap, 'bottom-left');
+    // basemapToggle
+    const baseMapToggle = new BasemapToggle({ view: this.#mapview, nextBasemap: 'streets-night-vector' });
+    this.#mapview?.ui.add(baseMapToggle, 'bottom-left');
+    // scalebar
+    const scaleBar = new ScaleBar({ view: this.#mapview });
+    scaleBar.unit = 'imperial';
+    this.#mapview?.ui.add(scaleBar, 'bottom-right');
+
 
     this.#mapview?.when(() => {
       this.#mapLayers = [];

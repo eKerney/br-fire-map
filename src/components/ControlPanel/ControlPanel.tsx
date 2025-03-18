@@ -62,7 +62,7 @@ const ControlPanel = () => {
           />
         </div>
         <div className='control-container'>
-          <p>Confidence Greater Than {confidenceValue}</p>
+          <p>Confidence Greater Than {confidenceValue}%</p>
           <input
             type='range'
             min='0'
