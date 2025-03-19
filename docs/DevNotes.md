@@ -23,7 +23,7 @@ Fixing the specified bugs did not present any significant difficulty.
 Attribute name for percent confidence was misspelled: percentconfidence - and changed to percent_confidence.  This information was found by clicking on the source for the FeatureLayer and reviewing feature attributes in the Service Definition via ArcREST.     
 
 The ESRI docs for the most recent version of the Maps SDK were broken last weekend(!) They seemed to be restored by Monday luckily.
-![[Screenshot (29).png|600]]
+![[esri_js_down.png|600]]
 
 A simple method to toggle layer visibility is to use the LayerList widget.  This only needs to be imported and added to the map, with no additional react state management.  Initially, the way I implemented updateLayerVisibility(), even passing an id string, was hard coded to the us-fires layer.  With 2 lines of code we can implement a dynamic selector using the mapview.map.findLayerById(id) method. 
 ```javascript
@@ -70,9 +70,9 @@ Adding charts is a useful addition to the spatial data visualization.  They can 
 This feature could be implemented by one developer without a significant time investment.  Exploratory example plots could be created in a few days, and the feature could be completed in one week.  Additional processing of the fires data would likely be needed to prep the data for visualization in the plot.  One method to achieve this is to convert the features into GeoJSON, and then create an array of values for analysis.  This is fairly efficient for layers with 100's or even 1000's of features.  If the number of features became greater than 100K, we may want to explore other methods to directly query and clean only the required data, or move the analysis to an API.  
 
 Plot - Scatterplot Example
-![[plot1.png|400]]
+<img src="plot1.png" width="400" alt="Plot - Scatterplot Example">
 Plot - Binplot Example
-![[plot2.png|400]]
+<img src="plot2.png" width="400" alt="Plot - Binplot Example">
 Plot - Density Markplot Example
-![[plot3.png|400]]
+<img src="plot3.png" width="400" alt="Plot - Density Markplot Example">
 
